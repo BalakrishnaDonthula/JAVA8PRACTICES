@@ -71,7 +71,7 @@ public class StreamsLearn3 {
 
     }
 
-    private static List<Employee> employeeList() {
+    public static List<Employee> employeeList() {
         List<Employee> employees = List.of(
                 new Employee(1L, "Alice", "Engineering", 85000, LocalDate.of(2020, 3, 15)),
                 new Employee(2L, "Bob", "Marketing", 62000, LocalDate.of(2020, 7, 20)),
