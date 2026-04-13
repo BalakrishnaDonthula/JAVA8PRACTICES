@@ -19,8 +19,16 @@ public class Example1 {
         //partitioningby();
         //groupByFirstChar();
         //filterTheelem();
-        peekmethod();
+        //peekmethod();
+        checkString();
 
+    }
+
+    private static void checkString() {
+        List<String> words = Arrays.asList("hello", "  ", "world", "\t", "java");
+        words.stream()
+                .filter(s -> !s.isBlank())
+                .collect(Collectors.toList()).forEach(System.out::println);
     }
 
     private static void peekmethod() {
